@@ -1,0 +1,43 @@
+<footer>
+    <div class="footer-content">
+        <div class="form-object animate slideInLeft">
+            <h2>Get In Touch</h2>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="input-field">
+                    <input name="name" type="text" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-fields">
+                    <div class="input-field">
+                        <input name="email" type="text" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input name="phone" type="text" required>
+                        <label for="phone">Phone Number</label>
+                    </div>
+                </div>
+                <label for="message" style="position: relative; top: 10px; color: black;">Message</label>
+                <textarea name="message" type="text" style="height: 100px;" required></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="contact-infos">
+            <div class="contact-info anchor1 animate slideInRight">
+                <i class="fa-solid fa-envelope fa-xl"></i>
+                <div>
+                    <h2>Send us an email</h2>
+                    <h3>Rayyanusername5@gmail.com</h3>
+                </div>
+            </div>
+            <div class="contact-info animate slideInRight delayed-animation">
+                <i class="fa-solid fa-phone fa-xl"></i>
+                <div>
+                    <h2>Give us a call</h2>
+                    <h3>1-(416)-816-6410</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 

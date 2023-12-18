@@ -1,0 +1,24 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="intro">
+    <div class="intro-left">
+        <div class="animate slideInBottom">
+            <h2>Exceptional Devices &</h2>
+            <h2>Affordable Repairs Services:</h2>
+            <h2><span>Unmatched Quality</span> Delivered</h2>
+            <h2>by <span>Skilled Professional.</span></h2>
+        </div>
+        <div class="animate slideInLeft">
+            <p>No Compromises, Only Excellence:</p>
+            <p>Authentic Parts, Secure Repairs.</p>
+        </div>
+        <div class="buttons">
+            <button class="custom-btn btn-3 animate slideInLeft"><span>Book Appointment</span></button>
+            <button class="custom-btn btn-3 animate slideInRight"><span>Get Quote Now</span></button>
+        </div>
+    </div>
+    <div class="intro-right animate slideInRight"><img src="{% static 'img/PhoneUser.png' %}"></div>
+</section>
+{% endblock content %}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="aos-by-red.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Whitby Wireless</title>
+</head>
+<body>
+    {% include './nav.html' %}
+    {% block content %}
+    {% endblock content %}
+    {% include './footer.html' %}
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://kit.fontawesome.com/e7ee738c9f.js" crossorigin="anonymous"></script>
+</body>
+</html> 
